@@ -1,0 +1,52 @@
+{
+    "category-items":
+        {
+            "name": "Service",
+            "description": "The different Services within the KDF",
+            "types": [
+                {"name": "Kenya Army","description": "KA"},
+                {"name": "Kenya Air Force","description": "KAF"},
+                {"name": "Kenya Navy","description": "KN"}
+            ]
+        },
+
+    "region":
+        {
+            "name": "Region",
+            "description": "The different Regions in the country Cases are Classified",
+            "types": [
+                {"name": "Coast","description": "Coast Region"},
+                {"name": "Nairobi","description": "Nairobi Region"},
+                {"name": "Western","description": "Western Region"}
+            ]
+        },
+
+    "hearing-type":
+        {
+            "name": "Hearing Types",
+            "description": "The different Hearing in the Courts",
+            "types": [
+                {"name": "Physical","description": "Physical"},
+                {"name": "Online","description": "Online"}
+            ]
+        },
+
+    "court-type":
+        {
+            "name": "Court Types",
+            "description": "The different Categories of Courts we have",
+            "types": [
+
+            ]
+        },
+
+    "course-of-action":
+        {
+            "name": "Course of Action",
+            "description": "The next course of action for a case",
+            "types": [
+
+            ]
+        }
+
+}

@@ -1,0 +1,228 @@
+{
+    "admin": [
+        {
+            "type": "single",
+            "slug": "admin_dashboard",
+            "menus": {
+                "label": "Dashboard",
+                "icon": "ti-aperture",
+                "url": "admin"
+            },
+            "children": [],
+            "subs": [
+                "chart/list",""
+            ],
+            "urls": [
+                "home","admin","dashboard",
+                "user/password",
+                "admin/calendar",
+                "user/notifications/get",
+                "user/notifications/list",
+                "user/notifications/mark",
+                "user/notifications/mark-read",
+                "user/notifications/view-all","user/notifications/list/allNotification",
+                "user/profile",
+                "user/profile-picture",
+                "email/verify/",
+                "admin/files/update-tags",
+                "admin/settings/core/categorytypeitem/list"
+            ]
+        },
+        {
+            "type": "single",
+            "slug": "manage_users",
+            "menus": {
+                "label": "Users",
+                "icon": "ti-user-plus",
+                "url": "admin/users"
+            },
+            "children": [],
+            "subs": [
+                "list","user","user/deactivate","user/activate","user/reset-password","user/store"
+            ],
+            "urls": [
+                "list","store/settings/config/stores/list",
+                "store/settings/departments/list"
+            ]
+        },
+        {
+            "type": "single",
+            "slug": "manage_reports",
+            "menus": {
+                "label": "Reports",
+                "icon": "ti-shopping-cart",
+                "url": "admin/logs"
+            },
+            "children": [],
+            "subs": [
+                "list","user"
+            ],
+            "urls": [
+                "list"
+            ]
+        },
+        {
+            "type": "single",
+            "slug": "manage_permission_group",
+            "menus": {
+                "label": "Permissions",
+                "icon": "ti-activity-heartbeat",
+                "url": "admin/permissiongroup"
+            },
+            "children": [],
+            "subs": [
+                "list","remove","update-permission","users/list","add-to-group"
+            ],
+            "urls": [
+                "list"
+            ]
+        },
+        {
+            "type": "many",
+            "slug": "reports",
+            "label": "Settings",
+            "icon": "ti-cpu",
+            "main": "admin/settings",
+            "children": [
+                {
+                    "label": "System",
+                    "slug": "system",
+                    "url": "admin/settings/system"
+                }
+            ],
+            "subs": [
+                "list","system/list","system/categorytypes/list"
+            ],
+            "urls": [
+                ""
+            ]
+        }
+
+    ],
+    "member": [
+        {
+            "type": "single",
+            "slug": "view_dashboard",
+            "menus": {
+                "label": "Dashboard",
+                "icon": "home",
+                "url": "member"
+            },
+            "children": [],
+            "subs": [
+                "latest-books"
+            ],
+            "urls": [
+                "home",
+                "user/password",
+                "user/profile",
+                "user/notifications/get",
+                "user/notifications/list","user/notifications/list/allNotification",
+                "user/notifications/view-all",
+                "user/profile-picture",
+                "user/notifications/mark",
+                "user/notifications/mark-read",
+                "email/verify/"
+            ]
+        },
+        {
+            "type": "single",
+            "slug": "view_book",
+            "menus": {
+                "label": "Books",
+                "icon": "bold",
+                "url": "member/books"
+            },
+            "children": [],
+            "subs": [
+                "list","book","","book/view-file"
+            ],
+            "urls": [
+
+            ]
+        },
+        {
+            "type": "single",
+            "slug": "view_book_history",
+            "menus": {
+                "label": "History",
+                "icon": "exchange-alt",
+                "url": "member/books/history"
+            },
+            "children": [],
+            "subs": [
+                "list","book","history","history/list"
+            ],
+            "urls": [
+
+            ]
+        },
+        {
+            "type": "single",
+            "slug": "view_dashboard",
+            "menus": {
+                "label": "Book Requests",
+                "icon": "sticky-note",
+                "url": "member/books/requests"
+            },
+            "children": [],
+            "subs": [
+                "list",""
+            ],
+            "urls": [
+               "librarian/settings/categories/list"
+            ]
+        }
+        ],
+    "guest": [
+    ],
+    "out": [
+        {
+            "slug": "guest_login",
+            "type": "single",
+            "menus": {
+                "label": "Login",
+                "icon": "zmdi-account",
+                "url": "login"
+            },
+            "urls": [
+                "logout",
+                "user/status/online",
+                "plan",
+                "home",
+                "register",
+                "user/register",
+                "user/login",
+                "activate","login",
+                "admin/documents/document/download/"
+            ]
+        },
+        {
+            "slug": "guest_register",
+            "type": "single",
+            "menus": {
+                "label": "Register",
+                "icon": "zmdi-account-add",
+                "url": "register"
+            }
+        }
+    ],
+    "in": [
+        {
+            "slug": "guest_login",
+            "type": "single",
+            "menus": {
+                "label": "Login",
+                "icon": "zmdi-account",
+                "url": "login"
+            },
+            "urls": [
+                "logout",
+                "user/password",
+                "user/profile",
+                "user/profile-picture",
+                "email/verify/"
+            ]
+        }
+    ]
+}
